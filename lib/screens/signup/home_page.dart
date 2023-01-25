@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              subheading('My Actions'),
+                              subheading('Quotes'),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.push(
@@ -267,8 +267,8 @@ class _HomePageState extends State<HomePage> {
                             child: TaskColumn(
                               icon: Icons.calendar_month,
                               iconBackgroundColor: LightColors.kRed,
-                              title: 'Study Plan',
-                              subtitle: 'Start generate your study plan here',
+                              title: 'Study Smart',
+                              subtitle: 'Study and enjoy the journey',
                             ),
                           ),
                           SizedBox(
@@ -277,15 +277,15 @@ class _HomePageState extends State<HomePage> {
                           TaskColumn(
                             icon: Icons.blur_circular,
                             iconBackgroundColor: LightColors.kDarkYellow,
-                            title: 'To-do',
-                            subtitle: 'Make your to-do list here',
+                            title: 'Arrange Time',
+                            subtitle: 'Arrange time wisely',
                           ),
                           SizedBox(height: 15.0),
                           TaskColumn(
                             icon: Icons.check_circle_outline,
                             iconBackgroundColor: LightColors.kBlue,
-                            title: 'TAK TAU NAK LETAK APA LAGI',
-                            subtitle: '18 tasks now. 13 started',
+                            title: 'Do Your Best',
+                            subtitle: 'Give the best in your life',
                           ),
                         ],
                       ),
@@ -303,15 +303,15 @@ class _HomePageState extends State<HomePage> {
                             children: <Widget>[
                               ActiveProjectsCard(
                                 cardColor: LightColors.kGreen,
-                                loadingPercent: 0.25,
-                                title: '            Todo List',
+                                loadingPercent: 0.0,
+                                title: '       Tasks Number',
                                 subtitle: '',
                               ),
                               SizedBox(width: 20.0),
                               ActiveProjectsCard(
                                 cardColor: LightColors.kRed,
-                                loadingPercent: 0.6,
-                                title: ' Completed Todo List',
+                                loadingPercent: 0.0,
+                                title: '           Completed',
                                 subtitle: '',
                               ),
                             ],

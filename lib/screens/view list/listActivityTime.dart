@@ -35,8 +35,8 @@ class _ListActivityTimeState extends State<ListActivityTime> {
   }
 
   Future<ActivityModel?> deleteActivity(context) async {
-    /*final response = await http.get(Uri.parse(
-        "http://10.0.2.2:8000/api/{widget.activity_id}/deletePersonalData"));*/
+    final response = await http.get(
+        Uri.parse("http://10.0.2.2:8000/api/{activity_id}/deletePersonalData"));
   }
 
   @override
@@ -45,7 +45,7 @@ class _ListActivityTimeState extends State<ListActivityTime> {
       appBar: AppBar(
         backgroundColor: LightColors.kLightYellow,
         elevation: 0.5,
-        centerTitle: true,
+        // centerTitle: true,
         title: Text(
           'List Activity Time',
           style: TextStyle(
@@ -77,9 +77,9 @@ class _ListActivityTimeState extends State<ListActivityTime> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(
-            10,
-            20,
-            10,
+            0,
+            0,
+            0,
             0,
           ),
           child: FutureBuilder(
@@ -105,9 +105,9 @@ class _ListActivityTimeState extends State<ListActivityTime> {
                             },
                             child: Card(
                               elevation: 10,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
+                              // shape: RoundedRectangleBorder(
+                              //   borderRadius: BorderRadius.circular(15),
+                              // ),
                               shadowColor: Color.fromARGB(117, 255, 255, 255),
                               //color: LightColors.kLightYellow,
                               color: Color.fromARGB(253, 255, 255, 255),
@@ -125,10 +125,10 @@ class _ListActivityTimeState extends State<ListActivityTime> {
                                 trailing: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    IconButton(
-                                        onPressed: () {},
-                                        color: Colors.green,
-                                        icon: Icon(Icons.edit)),
+                                    // IconButton(
+                                    //     onPressed: () {},
+                                    //     color: Colors.green,
+                                    //     icon: Icon(Icons.edit)),
                                     IconButton(
                                         onPressed: () {
                                           activity_id:
@@ -157,7 +157,7 @@ class _ListActivityTimeState extends State<ListActivityTime> {
       floatingActionButton: FloatingActionButton.extended(
         icon: Icon(Icons.add),
         label: Text('Add'),
-        backgroundColor: LightColors.kRed,
+        backgroundColor: LightColors.kGreen,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
         onPressed: () {

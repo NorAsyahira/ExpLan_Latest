@@ -32,7 +32,7 @@ class _TimetableWeekState extends State<TimetableWeek> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: LightColors.kLightYellow,
-        centerTitle: true,
+        // centerTitle: true,
         elevation: 1,
         title: Text(
           'Study Plan',

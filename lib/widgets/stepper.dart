@@ -81,7 +81,7 @@ class TopStepper extends StatelessWidget {
                       size: 20,
                       color:
                           this.step == 3 ? Colors.redAccent : Colors.black54)),
-              TextSpan(text: ' Generate SP'),
+              TextSpan(text: ' Study Plan'),
             ],
           ),
         ),
